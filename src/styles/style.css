@@ -11,7 +11,6 @@
 .margin_and_corners{
     border-radius: 15px;
     margin: 15px;
-    opacity: 75%;
 }
 .top_bar{
     background-color: blue;
@@ -37,5 +36,27 @@
     background-color: black;
 }
 .stats_tab{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: black;
+}
+.stats_tab > h1{
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+.left_side{
+    font-size: 27px;
+    padding: 15px;
+    color: white;
+}
+.data_item{
+    display: flex;
+    gap: 5px;
+}
+.right_side{
+    opacity: 100%;
+}
+.city{
+    display: flex;
 }
