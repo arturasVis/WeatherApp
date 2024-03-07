@@ -1,6 +1,7 @@
 import { getCurrentAuto} from "./weather_Api";
 import { getLocation } from "./location";
 import { getGIF } from "./giphy";
+import { loadBasedOnWeather } from "./clothes";
 
 export function loadData(){
     const temp_number=document.querySelector("#temp_number");
@@ -35,6 +36,7 @@ export function loadData(){
             }).catch(function(err){
                 console.log(err)
             });
+            loadBasedOnWeather(temp.current.temp_c);
             console.log(temp);
         }).catch(function(error){
             console.log(error)

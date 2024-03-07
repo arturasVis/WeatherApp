@@ -13,7 +13,7 @@
     margin: 15px;
 }
 .top_bar{
-    background-color: blue;
+    background-color: rgb(102, 102, 255,0.75);
     display: flex;
     text-align: center;
     align-items: center;
@@ -25,20 +25,20 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .main_body{
-    background-color: blue;
+    background-color: rgb(102, 102, 255,0.75);
     display: grid;
     grid-template-columns: 2fr 4fr;
 }
 .bottom_bar{
-    background-color: blue;
+    background-color: rgb(102, 102, 255,0.75);
 }
 .clothes_tab{
-    background-color: black;
+    background-color: rgb(13, 13, 13,0.75);
 }
 .stats_tab{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: black;
+    background-color: rgb(13, 13, 13,0.75);
 }
 .stats_tab > h1{
     color: white;
@@ -56,7 +56,15 @@
 }
 .right_side{
     opacity: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 .city{
     display: flex;
+    align-items: center;
+}
+.clothes_value{
+    color: white;
+    font-size: 18px;
 }
