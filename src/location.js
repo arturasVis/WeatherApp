@@ -3,7 +3,7 @@ export function getLocation(){
         if ("geolocation" in navigator) {
             /* Geolocation is available */
             navigator.geolocation.getCurrentPosition(function(position) {
-                console.log(position);
+                //console.log(position);
               resolve(position);
             }, function(error) {
               console.error("Error Code = " + error.code + " - " + error.message);

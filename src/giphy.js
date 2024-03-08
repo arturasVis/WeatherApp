@@ -4,7 +4,7 @@ export function getGIF(text){
         return response.json();
       })
       .then(function(response) {
-        console.log(response);
+        //console.log(response);
         return response.data.images.original.url;
       }).catch(function(err){
         console.log(err);
