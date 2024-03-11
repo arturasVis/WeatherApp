@@ -7,6 +7,7 @@ export function getCurrentAuto(location="",latitude="", longitude=""){
     }
     else{
         fetchURL=`https://api.weatherapi.com/v1/current.json?key=bc4649de6fbf447e84f171804240403&q=${location}&aqi=no`
+        
     }
     return fetch(fetchURL,{mode:"cors"})
     .then(function(response){
